@@ -100,10 +100,16 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Delecision" startnode="26" creator="Twine" creator-version="2.3.9" ifid="C1A7F2AE-D3F6-42AA-9C87-C49E9E54AF1B" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#ui-bar {
-display: none;
+	<tw-storydata name="Delecision" startnode="26" creator="Twine" creator-version="2.3.9" ifid="C1A7F2AE-D3F6-42AA-9C87-C49E9E54AF1B" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*#ui-bar {
+display: hidden;
 }
 #story {
+margin-left: 3.5em;
+}*/
+.hideui #ui-bar {
+	display: none;
+}
+.hideui #story {
 margin-left: 3.5em;
 }
 
@@ -209,7 +215,7 @@ video {
 
 
 
- /* alt colour: #64575d */</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="gameover" color="red"></tw-tag>,<tw-tag name="issues" color="yellow"></tw-tag>,<tw-tag name="vote" color="green"></tw-tag>,<tw-tag name="voting" color="green"></tw-tag><tw-passagedata pid="1" name="El primerito día" tags="textanimation voting" position="619,389" size="100,100">&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;
+ /* alt colour: #64575d */</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="gameover" color="red"></tw-tag>,<tw-tag name="issues" color="yellow"></tw-tag>,<tw-tag name="vote" color="green"></tw-tag>,<tw-tag name="voting" color="green"></tw-tag><tw-passagedata pid="1" name="El primerito día" tags="textanimation voting" position="619,389" size="100,100">&lt;&lt;script&gt;&gt;UIBar.stow()&lt;&lt;/script&gt;&gt;&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;
 &lt;&lt;audio spawn play&gt;&gt;
 &lt;h2&gt;El primerito día&lt;/h2&gt;
 Es tu primer día de clase como integrante de la Delegación EPS 
@@ -478,10 +484,10 @@ Resulta que todas las personas que quieren ese criterio han nacido en día impar
 
 &lt;&lt;cacheaudio &quot;music_voting_6&quot; &quot;https://github.com/delePS/delecision/blob/master/assets/audio/music_voting_6.mp3?raw=true&quot;&gt;&gt;
 
-&lt;&lt;cacheaudio &quot;music_voting_7&quot; &quot;https://github.com/delePS/delecision/blob/master/assets/audio/music_voting_7.mp3?raw=true&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Title screen" tags="titletag" position="624,265" size="100,100">&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;
+&lt;&lt;cacheaudio &quot;music_voting_7&quot; &quot;https://github.com/delePS/delecision/blob/master/assets/audio/music_voting_7.mp3?raw=true&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Title screen" tags="titletag hideui" position="624,265" size="100,100">&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;
 &lt;&lt;audio title_theme loop play&gt;&gt;
 &lt;video autoplay muted loop id=&quot;myVideo&quot;&gt;
-&lt;source src=&quot;https://cdntube2.b-cdn.net/mp4/ade4d7e45deb02ffcc232a81ed92ec54e9fc316d.mp4?v=19700101120000&quot; type=&quot;video/mp4&quot;&gt;
+&lt;source src=&quot;https://github.com/delePS/delecision/blob/master/assets/images/title_background.mp4?raw=true&quot; type=&quot;video/mp4&quot;&gt;
 &lt;/video&gt;
 &lt;center&gt;&lt;img src=&quot;https://raw.githubusercontent.com/delePS/delecision/master/assets/images/title_delecision.png&quot; alt=&quot;DEleCISIÓN&quot;/&gt;
 
@@ -587,7 +593,9 @@ Te encuentras a tu mejor amigo con sus suculenta en la consulta. Te mira raro.
 
 [[Mientras estás la sala de espera hablas por el grupo con tus compañeros-&gt;Otro día más]]</tw-passagedata><tw-passagedata pid="34" name="Créditos" tags="" position="745.5,265.5" size="100,100">&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio music_credits loop play&gt;&gt;Juego creado por la Delegación de Estudiantes de la Escuela Politécnica Superior de la Universidad Carlos III de Madrid.
 
-Música: Mr Rock, Angelo Mugno, Ontopic, itsRavey</tw-passagedata><tw-passagedata pid="35" name="Agh, no me responde" tags="" position="571,655" size="100,100">&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;El tiempo sigue pasando, pero no hay respuesta del profesor. 
+Música: Mr Rock, Angelo Mugno, Ontopic, itsRavey
+
+[[Volver-&gt;Title screen]] </tw-passagedata><tw-passagedata pid="35" name="Agh, no me responde" tags="" position="571,655" size="100,100">&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;El tiempo sigue pasando, pero no hay respuesta del profesor. 
 
 Tras mirar tu bandeja de entrada de manera obsesiva dándole al F5, te acuerdas de que el profesor es asociado. Trabaja en la multinacional MEME S.L. y casi no pisa la Universidad. Claro, por eso está siempre de buen humor...
 
